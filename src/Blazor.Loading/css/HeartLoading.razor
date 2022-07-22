@@ -1,22 +1,22 @@
-﻿@code {
-    [Parameter] public string Color { get; set; } = "#FFF";
-}
+﻿@namespace Blazor.Loading
+@inherits BaseCssLoading
+
 <style>
     .blazor-loading-heart {
         display: inline-block;
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: @(Size)px;
+        height: @(Size)px;
         transform: rotate(45deg);
-        transform-origin: 40px 40px;
+        transform-origin: @(Convert(40))px @(Convert(40))px;
     }
 
         .blazor-loading-heart div {
-            top: 32px;
-            left: 32px;
+            top: @(Convert(32))px;
+            left: @(Convert(32))px;
             position: absolute;
-            width: 32px;
-            height: 32px;
+            width: @(Convert(32))px;
+            height: @(Convert(32))px;
             background: @Color;
             animation: blazor-loading-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
         }
@@ -26,18 +26,18 @@
                 content: " ";
                 position: absolute;
                 display: block;
-                width: 32px;
-                height: 32px;
+                width: @(Convert(32))px;
+                height: @(Convert(32))px;
                 background: @Color;
             }
 
             .blazor-loading-heart div:before {
-                left: -24px;
+                left: -@(Convert(24))px;
                 border-radius: 50% 0 0 50%;
             }
 
             .blazor-loading-heart div:after {
-                top: -24px;
+                top: -@(Convert(24))px;
                 border-radius: 50% 50% 0 0;
             }
 

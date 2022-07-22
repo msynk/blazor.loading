@@ -1,22 +1,22 @@
-﻿@code {
-    [Parameter] public string Color { get; set; } = "#FFF";
-}
+﻿@namespace Blazor.Loading
+@inherits BaseCssLoading
+
 <style>
     .blazor-loading-ring {
         display: inline-block;
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: @(Size)px;
+        height: @(Size)px;
     }
 
         .blazor-loading-ring div {
             box-sizing: border-box;
             display: block;
             position: absolute;
-            width: 64px;
-            height: 64px;
-            margin: 8px;
-            border: 8px solid @Color;
+            width: @(Convert(64))px;
+            height: @(Convert(64))px;
+            margin: @(Convert(8))px;
+            border: @(Convert(8))px solid @Color;
             border-radius: 50%;
             animation: blazor-loading-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
             border-color: @Color transparent transparent transparent;

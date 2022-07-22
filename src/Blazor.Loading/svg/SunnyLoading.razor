@@ -1,6 +1,5 @@
-﻿@code {
-    [Parameter] public int Size { get; set; } = 200;
-}
+﻿@namespace Blazor.Loading
+@inherits BaseSvgLoading
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: @(Size)px; height: @(Size)px">
     <g style="transform-origin: 50px 50px 0px; transform: scale(0.6);">
@@ -379,9 +378,9 @@
         </g>
     </g>
     <style type="text/css" class="ld ld-wander-px-h" style="transform-origin: 50px 50px 0px; animation-duration: 3.1s; animation-delay: -1.03333s;">
-        path, ellipse, circle, rect, polygon, polyline, line {
+        @*path, ellipse, circle, rect, polygon, polyline, line {
             stroke-width: 0;
-        }
+        }*@
 
         @@keyframes ld-wander-px-h {
             0% {

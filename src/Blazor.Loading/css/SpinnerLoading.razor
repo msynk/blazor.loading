@@ -1,17 +1,17 @@
-﻿@code {
-    [Parameter] public string Color { get; set; } = "#FFF";
-}
+﻿@namespace Blazor.Loading
+@inherits BaseCssLoading
+
 <style>
     .blazor-loading-spinner {
         color: official;
         display: inline-block;
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: @(Size)px;
+        height: @(Size)px;
     }
 
         .blazor-loading-spinner div {
-            transform-origin: 40px 40px;
+            transform-origin: @(Convert(40))px @(Convert(40))px;
             animation: blazor-loading-spinner 1.2s linear infinite;
         }
 
@@ -19,10 +19,10 @@
                 content: " ";
                 display: block;
                 position: absolute;
-                top: 3px;
-                left: 37px;
-                width: 6px;
-                height: 18px;
+                top: @(Convert(3))px;
+                left: @(Convert(37))px;
+                width: @(Convert(6))px;
+                height: @(Convert(18))px;
                 border-radius: 20%;
                 background: @Color;
             }

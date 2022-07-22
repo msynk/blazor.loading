@@ -1,6 +1,10 @@
-﻿@code {
-    [Parameter] public string Color { get; set; } = "#FFF";
+﻿@namespace Blazor.Loading
+@inherits BaseCssLoading
+
+@code {
+    protected override int OriginalSize { get; set; } = 64;
 }
+
 <style>
     .blazor-loading-circle {
         display: inline-block;
@@ -9,9 +13,9 @@
 
         .blazor-loading-circle > div {
             display: inline-block;
-            width: 64px;
-            height: 64px;
-            margin: 8px;
+            width: @(Size)px;
+            height: @(Size)px;
+            margin: @(Convert(8))px;
             border-radius: 50%;
             background: @Color;
             animation: blazor-loading-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;

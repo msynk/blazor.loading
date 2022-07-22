@@ -1,41 +1,41 @@
-﻿@code {
-    [Parameter] public string Color { get; set; } = "#FFF";
-}
+﻿@namespace Blazor.Loading
+@inherits BaseCssLoading
+
 <style>
     .blazor-loading-ellipsis {
         display: inline-block;
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: @(Size)px;
+        height: @(Size)px;
     }
 
         .blazor-loading-ellipsis div {
             position: absolute;
-            top: 33px;
-            width: 13px;
-            height: 13px;
+            top: @(Convert(33))px;
+            width: @(Convert(13))px;
+            height: @(Convert(13))px;
             border-radius: 50%;
             background: @Color;
             animation-timing-function: cubic-bezier(0, 1, 1, 0);
         }
 
             .blazor-loading-ellipsis div:nth-child(1) {
-                left: 8px;
+                left: @(Convert(8))px;
                 animation: blazor-loading-ellipsis1 0.6s infinite;
             }
 
             .blazor-loading-ellipsis div:nth-child(2) {
-                left: 8px;
+                left: @(Convert(8))px;
                 animation: blazor-loading-ellipsis2 0.6s infinite;
             }
 
             .blazor-loading-ellipsis div:nth-child(3) {
-                left: 32px;
+                left: @(Convert(32))px;
                 animation: blazor-loading-ellipsis2 0.6s infinite;
             }
 
             .blazor-loading-ellipsis div:nth-child(4) {
-                left: 56px;
+                left: @(Convert(56))px;
                 animation: blazor-loading-ellipsis3 0.6s infinite;
             }
 
@@ -65,7 +65,7 @@
         }
 
         100% {
-            transform: translate(24px, 0);
+            transform: translate(@(Convert(24))px, 0);
         }
     }
 </style>
