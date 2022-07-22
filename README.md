@@ -1,5 +1,5 @@
 # blazor.loading
-A set of loading indicator components for Blazor
+A set of loading indicator components for Blazor (based on https://loading.io/)
 
 ## Pure css loading
 
