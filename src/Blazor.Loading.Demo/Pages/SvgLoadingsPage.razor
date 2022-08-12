@@ -1,12 +1,18 @@
 ﻿@page "/svg"
 
-<PageTitle>Blazor Loading Demo</PageTitle>
+<PageTitle>Blazor Loading Demo - SVG</PageTitle>
 
+<NavLink href="/">Home -></NavLink>
 <NavLink href="css">CSS Loading components -></NavLink>
+<NavLink href="bg">Background Loading components -></NavLink>
 
+<br />
 <br />
 
 <style>
+    a {
+        display: block;
+    }
     .container {
         display: flex;
         align-items: center;
@@ -76,5 +82,33 @@
 
     <div class="wrapper">
         <BooksLoading Size="100" />
+    </div>
+</div>
+
+<div class="container">
+    <div class="wrapper">
+        <BricksLoading Size="100" />
+    </div>
+
+    <div class="wrapper">
+        <BubbleLoading Size="100" />
+    </div>
+
+    <div class="wrapper">
+        <BucketLoading Size="100" />
+    </div>
+</div>
+
+<div class="container">
+    <div class="wrapper">
+        <CameraLoading Size="100" />
+    </div>
+
+    <div class="wrapper">
+        <ChunkLoading Size="100" />
+    </div>
+
+    <div class="wrapper">
+        <ClockLoading Size="100" />
     </div>
 </div>

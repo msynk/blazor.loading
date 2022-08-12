@@ -1,0 +1,45 @@
+﻿@page "/bg"
+
+<PageTitle>Blazor Loading Demo - Background</PageTitle>
+
+<NavLink href="/">Home -></NavLink>
+<NavLink href="css">CSS Loading components -></NavLink>
+<NavLink href="svg">SVG Loading components -></NavLink>
+
+<br />
+<br />
+
+<style>
+    a {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        background: #333;
+        margin-bottom: 25px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 25px;
+    }
+</style>
+
+<div class="container">
+    <div class="wrapper"><CloudBgLoading /></div>
+    <div class="wrapper"><RainBgLoading /></div>
+    <div class="wrapper"><GooeyBgLoading /></div>
+</div>
+
+<div class="container">
+    <div class="wrapper"><MazeBgLoading /></div>
+    <div class="wrapper"><FireworksBgLoading /></div>
+    <div class="wrapper"><RaindropBgLoading /></div>
+</div>
+
+<div class="container">
+    <div class="wrapper"><MatrixBgLoading /></div>
+    <div class="wrapper"><StripeBgLoading /></div>
+    <div class="wrapper"><LinesBgLoading /></div>
+</div>
