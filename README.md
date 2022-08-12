@@ -1,6 +1,8 @@
 # blazor.loading
 A set of loading indicator components for Blazor (based on https://loading.io/)
 
+...
+
 ## Pure css loading
 
 ![image](https://user-images.githubusercontent.com/6169846/180429761-04397ed5-fb5d-4319-9001-10d6eb025744.png)
@@ -39,6 +41,8 @@ A set of loading indicator components for Blazor (based on https://loading.io/)
     <SpinnerLoading Color="royalblue" Size="64" />
 </div>
 ```
+
+...
 
 ## Pure SVG loading
 
@@ -88,6 +92,8 @@ A set of loading indicator components for Blazor (based on https://loading.io/)
     <div class="wrapper"><BooksLoading Size="100" /></div>
 </div>
 ```
+
+...
 
 ## Pure SVG Background loading
 
