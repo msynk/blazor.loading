@@ -5,7 +5,8 @@ A set of loading indicator components for Blazor (based on https://loading.io/)
 
 ## Pure css loading
 
-![image](https://user-images.githubusercontent.com/6169846/180429761-04397ed5-fb5d-4319-9001-10d6eb025744.png)
+![image](https://user-images.githubusercontent.com/6169846/184406437-1d54a23a-929b-45fc-9ce1-134ba23d5a40.png)
+
 
 ```razor
 <style>
@@ -46,7 +47,8 @@ A set of loading indicator components for Blazor (based on https://loading.io/)
 
 ## Pure SVG loading
 
-![image](https://user-images.githubusercontent.com/6169846/180429866-1342c014-556d-449a-a93a-ba13963c5b68.png)
+![image](https://user-images.githubusercontent.com/6169846/184406288-9791f05e-0040-49c1-aaa6-2f051494f4b0.png)
+
 
 ```razor
 <style>
@@ -61,20 +63,14 @@ A set of loading indicator components for Blazor (based on https://loading.io/)
     .wrapper {
         padding: 25px;
         text-align: center;
-        background: #aaa;
+        background: #333;
     }
 </style>
 
 <div class="container">
-    <div class="wrapper">
-        <SunnyLoading Size="100" />
-        <div style="margin-top:-25px">Loading...</div>
-    </div>
+    <div class="wrapper"><SunnyLoading Size="100" /></div>
     <div class="wrapper"><GiftLoading Size="100" /></div>
     <div class="wrapper"><AtomLoading Size="100" /></div>
-</div>
-
-<div class="container">
     <div class="wrapper"><BallLoading Size="100" /></div>
     <div class="wrapper"><BallsLoading Size="100" /></div>
     <div class="wrapper"><BarChartLoading Size="100" /></div>
@@ -84,12 +80,18 @@ A set of loading indicator components for Blazor (based on https://loading.io/)
     <div class="wrapper"><FadingBarsLoading Size="100" /></div>
     <div class="wrapper"><BasketballLoading Size="100" /></div>
     <div class="wrapper"><BeanEaterLoading Size="100" /></div>
-</div>
-
-<div class="container">
     <div class="wrapper"><BlocksLoading Size="100" /></div>
     <div class="wrapper"><BlueCatLoading Size="100" /></div>
     <div class="wrapper"><BooksLoading Size="100" /></div>
+</div>
+
+<div class="container">
+    <div class="wrapper"><BricksLoading Size="100" /></div>
+    <div class="wrapper"><BubbleLoading Size="100" /></div>
+    <div class="wrapper"><BucketLoading Size="100" /></div>
+    <div class="wrapper"><CameraLoading Size="100" /></div>
+    <div class="wrapper"><ChunkLoading Size="100" /></div>
+    <div class="wrapper"><ClockLoading Size="100" /></div>
 </div>
 ```
 
